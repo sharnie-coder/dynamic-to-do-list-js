@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // remove button
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
-    removeBtn.className = 'remove-btn';
+    
+    removeBtn.classList.add('remove-btn');
+
 
     // remove handler - removes DOM element and updates local storage
     removeBtn.addEventListener('click', () => {
